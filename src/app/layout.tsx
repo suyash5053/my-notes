@@ -2,6 +2,8 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
+import { SidebarProvider } from "~/components/ui/sidebar";
+import { AppSidebar } from "~/components/app-sidebar";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -18,7 +20,12 @@ export default function RootLayout({
       className={`${GeistSans.variable}`}
       suppressHydrationWarning
     >
-      <body>{children}</body>
+      <body>
+        <SidebarProvider>
+          <AppSidebar />
+          {children}
+        </SidebarProvider>
+      </body>
     </html>
   );
 }
