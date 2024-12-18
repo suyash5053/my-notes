@@ -1,9 +1,3 @@
-import Sidebar from "~/components/sidebar";
-
 export default function HomePage() {
-  return (
-    <div>
-      <Sidebar />
-    </div>
-  );
+  return <div className="p-4">hii</div>;
 }

@@ -2,6 +2,7 @@ import "~/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
+import Layout from "~/components/layout";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -18,7 +19,9 @@ export default function RootLayout({
       className={`${GeistSans.variable}`}
       suppressHydrationWarning
     >
-      <body>{children}</body>
+      <body>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   );
 }

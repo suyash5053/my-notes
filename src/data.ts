@@ -8,9 +8,9 @@ import {
 
 export const data = {
   user: {
-    name: "Suyash",
+    name: "Suyash Srivastava",
     email: "abc@gmail.com",
-    avatar: "/assets/suyash.jpg",
+    avatar: "/avatar.svg",
   },
   sidebarItems: [
     {
